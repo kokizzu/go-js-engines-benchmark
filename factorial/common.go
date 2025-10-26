@@ -84,7 +84,7 @@ func printResultsTable(metrics []EngineMetrics, iterations int) {
 	t.AppendRow(totalRow)
 
 	fastest := metrics[fastestAvgIdx]
-	speedRow := table.Row{"Speed"}
+	speedRow := table.Row{"Relative Time (lower is better)"}
 	for _, m := range metrics {
 		ratio := float64(m.Average.Duration) / float64(fastest.Average.Duration)
 		speedRow = append(speedRow, fmt.Sprintf("%.2fx", ratio))

@@ -13,14 +13,14 @@ Performance benchmarks for three JavaScript engines in Go.
 
 | Iteration | GOJA | ModerncQuickJS | QJS |
 | --- | --- | --- | --- |
-| 1 | 1.128s | 1.897s | 737.635ms |
-| 2 | 1.134s | 1.936s | 742.670ms |
-| 3 | 1.123s | 1.898s | 738.737ms |
-| 4 | 1.120s | 1.900s | 754.692ms |
-| 5 | 1.132s | 1.918s | 756.924ms |
-| Average | 1.127s | 1.910s | **746.132ms** |
-| Total | 5.637s | 9.549s | **3.731s** |
-| Speed | 1.51x | 2.56x | 1.00x |
+| 1 | 1.096s | 1.427s | 700.832ms |
+| 2 | 1.067s | 1.451s | 689.655ms |
+| 3 | 1.113s | 1.598s | 771.041ms |
+| 4 | 1.085s | 1.469s | 709.371ms |
+| 5 | 1.090s | 1.487s | 715.391ms |
+| Average | 1.090s | 1.486s | **717.258ms** |
+| Total | 5.450s | 7.432s | **3.586s** |
+| Relative Time (lower is better) | 1.52x | 2.07x | 1.00x |
 
 *Benchmarks run on AMD Ryzen 7 7840HS, 32GB RAM, Linux*
 
@@ -28,16 +28,16 @@ Performance benchmarks for three JavaScript engines in Go.
 
 | Metric | GOJA | ModerncQuickJS | QJS |
 | --- | --- | --- | --- |
-| Richards | 345 | 189 | **434** |
-| DeltaBlue | 411 | 205 | **451** |
-| Crypto | 203 | 305 | **393** |
-| RayTrace | 404 | 347 | **488** |
-| EarleyBoyer | 779 | 531 | **852** |
-| RegExp | **381** | 145 | 142 |
-| Splay | 1289 | 856 | **1408** |
-| NavierStokes | 324 | 436 | **588** |
-| Score (version 7) | 442 | 323 | **498** |
-| Duration (seconds) | 78.349s | 97.240s | **72.004s** |
+| Richards | 353 | 221 | **448** |
+| DeltaBlue | 448 | 260 | **490** |
+| Crypto | 209 | 218 | **414** |
+| RayTrace | 419 | 392 | **536** |
+| EarleyBoyer | 803 | 625 | **873** |
+| RegExp | **343** | 162 | 141 |
+| Splay | 1361 | 939 | **1511** |
+| NavierStokes | 336 | 417 | **611** |
+| Score (version 7) | 452 | 343 | **522** |
+| Duration (seconds) | 76.086s | 86.525s | **69.060s** |
 
 *Benchmarks run on AMD Ryzen 7 7840HS, 32GB RAM, Linux*
 
